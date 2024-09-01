@@ -1,0 +1,11 @@
+input {
+    padding: .4rem;
+    outline: none;
+}
+
+button {
+    width: 5rem;
+    padding: .2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}

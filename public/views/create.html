@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/input.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
+  <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
+</head>
+
+<body>
+  <header id="site-header" class="site-header" role="banner">
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="home">
+        <h2 class="post-list-heading">Posts</h2>
+        <form id="post-form">
+          <input type="text" id="title"   placeholder="Title" required><br><br>
+          <input id="body" type="hidden" name="body">
+          <trix-editor input="body"></trix-editor>
+          <button id="submit-btn">submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer" class="site-footer h-card">
+  </footer>
+  <script src="/js/frame.js"></script>
+  <script src="/js/api.js"></script>
+</body>
+</html>
